@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 70px;
+}
+header.light{
+    background-color: white;
+    color: hsl(200, 15%, 8%);
+}
+header.dark{
+    background-color:hsl(209, 23%, 22%);
+    color: white;
+}
+main.light{
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(200, 15%, 8%);
+}
+main.dark{
+    background-color: hsl(207, 26%, 17%);
+    color: white;
+}
+.dark input{
+    color: hsl(0, 0%, 52%);
+    background-color: hsl(207, 26%, 17%);
+}
+.actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 70px;
+}
+.actions form{
+    color: hsl(0, 0%, 52%);
+    background-color: hsl(209, 23%, 22%);
+    display: flex;
+    border-radius: 4px;
+    padding: 5px;
+   
+}
+.actions ion-icon{
+    color: inherit;
+
+}
+.filter button{
+    color: hsl(0, 0%, 52%);
+    background-color: transparent;
+    padding: 12px 20px;
+    width: 100%;
+    border: none;
+    text-align: start;
+}
+.filter button:hover{
+    cursor: pointer;
+}
+.filter{
+    position: relative;
+    background-color: hsl(209, 23%, 22%);
+}
+.filter ul{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 105%;
+    height: 0px;
+    overflow: hidden;
+    background-color: hsl(209, 23%, 22%);
+}
+.filter:hover ul{
+    height: max-content;
+
+}
+
+.countries{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 12px 70px;
+    gap: 20px;
+    
+}
+.countries>div{
+    width: 240px;
+    padding: 0px;
+    border: 0;
+    border-radius: 8px;
+    margin: 20px;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.countries img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
